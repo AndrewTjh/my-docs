@@ -1,0 +1,10 @@
+spring cloud
+eureka
+feign,ribbon
+服务治理、配置管理、监控
+rest template
+zuul
+turbine,pinpoint
+docker,kubernetes
+镜像、容器
+alpine

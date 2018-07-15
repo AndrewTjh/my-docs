@@ -1,0 +1,5 @@
+C盘用户目录有几个工程目录
+C:\Users\sxtangf\Documents\GitHub
+
+D盘根目录下有几个工程目录
+D:\demos and samples

@@ -1,0 +1,18 @@
+eureka-server
+	port: 8761
+	url: http://localhost:8761/
+	serviceUrl.defaultZone: http://localhost:8761/eureka/
+
+eureka-service-provider
+	port: 8862,8863,8864
+	app-name[service-name]: eureka-service
+
+eureka-service-consumer
+	ribbon
+		port: 8962,8963,8964
+	feign
+		port: 9062,9063,9064
+
+eureka-zuul
+	port: 8769
+
