@@ -1,0 +1,84 @@
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	var Human = function(id,name,sex){
+		this.id = id;
+		this.name = name;
+		this.sex = sex;
+		this.sayHello = function(name) {
+			return ("hello,"+name);
+		}
+	}
+	Human.prototype = new Object();
+	var Student = function(major){
+		this.major = major;
+	}
+	Student.prototype = new Human();
+	var obj = {};
+
+	var arr = [];
+	for(var name in $.fn) {
+		arr.push(name);
+	}
+
+	var brr = [];
+	for(var name in $("")) {
+		brr.push(name);
+	}
+
+	arr.sort();
+	brr.sort();
+
+	document.write("<ol style=\"width:150px;float:left;\">");
+	for (var i = 0; i < arr.length; i++) {
+		document.write("<li>"+arr[i]+"</li>");
+	}
+	document.write("</ol>");
+
+	document.write("<ol style=\"width:150px;float:left;\">");
+	for (var i = 0; i < brr.length; i++) {
+		document.write("<li>"+brr[i]+"</li>");
+	}
+	document.write("</ol>");
+
+	// var proto = new Student;
+	// while (proto) {
+	// 	console.log("proto="+proto);
+	// 	proto = proto.__proto__;
+	// }
+	// console.log(Object.getPrototypeOf('foo'));
+	// var arr = new Array();
+	// console.log(arr.unshift);
+	// console.log(arr.shift);
+	// console.log(arr.pop);
+	// console.log(arr.push);
+	// Array.prototype.sayHello = function(name){
+	// 	console.log("hello,"+name);
+	// }
+	// arr.sayHello("Andrew");
+	// var arr = [];
+	// var obj = document.cookie;
+	// alert(obj);
+	// for (var name in obj) {
+	// 	arr.push(name);
+	// }
+	// arr.sort();
+	// for (var i = 0; i < arr.length; i++) {
+	// 	var name = arr[i];
+	// 	console.log("%o,%o",name,typeof obj[name]);
+	// }
+	//string,number,boolean,object,function
+	// console.log("typeof Function="+typeof Function);
+	// console.log("typeof Object="+typeof Object);
+	// console.log("typeof Array="+typeof Array);
+	// console.log("typeof Number="+typeof Number);
+	// console.log("typeof String="+typeof String);
+	// console.log("typeof Boolean="+typeof Boolean);
+	// console.log("typeof Date="+typeof Date);
+	// console.log("typeof RegExp="+typeof RegExp);
+	// console.log("typeof Error="+typeof Error);
+	// console.log("typeof Math="+typeof Math);
+
+
+
+</script>
+

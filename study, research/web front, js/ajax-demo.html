@@ -1,0 +1,19 @@
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$.ajax({
+		"type":"post",
+		"url":"http://10.143.173.61:7103/POS_ACCLHYB_Services_v1_0_0/order/queryWallet",
+		"data":{"orderChannel":"HUB","regionCode":"360","distributorNumber":59375959},
+		"contentType":"application/json",
+		"beforeSend":function(xhr){
+			xhr.setRequestHeader("appid","acclhybris");
+			xhr.setRequestHeader("appkey","acclhybriskey");
+		},
+		"success":function(data,status){
+			console.log("onSuccess:data=%o,status=%o",data,status);
+		},
+		"error":function(xhr,status,error){
+			console.log("onError:xhr=%o,status=%o,error=%o",xhr,status,error);
+		}
+	});
+</script>

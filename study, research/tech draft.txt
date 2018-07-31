@@ -1,0 +1,14 @@
+EntityManager
+JpaRepository
+HibernateTemplate
+JdbcTemplate
+SqlSessionTemplate
+DataSource
+Session
+SqlSession
+Connection
+
+
+LocalContainerEntityManagerFactoryBean >>
+	EntityManagerFactory (EntityManagerFactoryImpl) >>
+		EntityManager
