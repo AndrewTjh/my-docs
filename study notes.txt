@@ -1,3 +1,5 @@
+spring-jdbc,hibernate,jpa,data
+
 mq,amqp,mqtt,
 
 servlet async
@@ -5,3 +7,5 @@ servlet async
 netty,
 
 snowflake—©ª®À„∑®
+
+vdi
