@@ -1,0 +1,37 @@
+linux:
+vi,less,more,iptables,service,curl,端口开放
+
+webpack, 
+cordova, node, npm
+maven archetype
+
+freemarker, velocity, tapestry, theymeleaf
+
+
+spring-jdbc,hibernate,jpa,data
+
+mq,amqp,mqtt,
+
+servlet async
+非阻塞IO，阻塞IO，nio,bio,
+netty,
+
+snowflake雪花算法
+
+vdi
+
+
+
+
+webstorm
+http://www.jetbrains.com/webstorm/
+https://blog.csdn.net/vchen_hao/article/details/77248053
+https://www.newasp.net/soft/182554.html
+https://jingyan.baidu.com/article/7f41ecec323801593d095c28.html
+
+
+
+xul,xbl
+
+
+
