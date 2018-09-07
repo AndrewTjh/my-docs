@@ -1,0 +1,73 @@
+@Mapper
+public interface UserMapper {
+    @Insert("INSERT INTO user(name, hobby) VALUES(#{name}, #{hobby})")
+    int insert(@Param("name") String name, @Param("hobby") String hobby);
+    @Update("UPDATE user SET hobby=#{hobby} WHERE name=#{name}")
+    void update(User user);
+    @Delete("DELETE FROM user WHERE id =#{id}")
+    void delete(Long id);
+}
+
+public interface UserMapper {
+
+    @Select("SELECT * FROM users")
+    @Results({
+        @Result(property = "userSex",  column = "user_sex", javaType = UserSexEnum.class),
+        @Result(property = "nickName", column = "nick_name")
+    })
+    List<UserEntity> getAll();
+
+    @Select("SELECT * FROM users WHERE id = #{id}")
+    @Results({
+        @Result(property = "userSex",  column = "user_sex", javaType = UserSexEnum.class),
+        @Result(property = "nickName", column = "nick_name")
+    })
+    UserEntity getOne(Long id);
+
+    @Insert("INSERT INTO users(userName,passWord,user_sex) VALUES(#{userName}, #{passWord}, #{userSex})")
+    void insert(UserEntity user);
+
+    @Update("UPDATE users SET userName=#{userName},nick_name=#{nickName} WHERE id =#{id}")
+    void update(UserEntity user);
+
+    @Delete("DELETE FROM users WHERE id =#{id}")
+    void delete(Long id);
+
+}
+
+
+// This example creates a prepared statement, something like select * from teacher where name = ?;
+@Select("Select * from teacher where name = #{name}")
+Teacher selectTeachForGivenName(@Param("name") String name);
+
+// This example creates n inlined statement, something like select * from teacher where name = 'someName';
+@Select("Select * from teacher where name = '${name}'")
+Teacher selectTeachForGivenName(@Param("name") String name);
+
+
+@Mapper
+public interface UserMapper {
+    @Insert("INSERT INTO user(name, hobby) VALUES(#{name}, #{hobby})")
+    int insert(@Param("name") String name, @Param("hobby") String hobby);
+    @Update("UPDATE user SET hobby=#{hobby} WHERE name=#{name}")
+    void update(User user);
+    @Delete("DELETE FROM user WHERE id =#{id}")
+    void delete(Long id);
+}
+
+public interface UserMapper {
+	@Select("SELECT * FROM tb_user WHERE id = #{id}")
+	User getUserById(Integer id);
+ 
+	@Select("SELECT * FROM tb_user")
+	public List<User> getUserList();
+ 
+	@Insert("insert into tb_user(username, age, ctm) values(#{username}, #{age}, now())")
+	public int add(User user);
+ 
+	@Update("UPDATE tb_user SET username = #{user.username} , age = #{user.age} WHERE id = #{id}")
+	public int update(@Param("id") Integer id, @Param("user") User user);
+ 
+	@Delete("DELETE from tb_user where id = #{id} ")
+	public int delete(Integer id);
+}
