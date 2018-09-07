@@ -1,12 +1,13 @@
 linux:
-vi,less,more,iptables,service,curl,端口开放
+vi,less,more,cat,tail,head
+iptables,service,netstat,端口开放,
+curl -v,-I
 
 webpack, 
 cordova, node, npm
-maven archetype
+maven archetype webapp,simplesite
 
 freemarker, velocity, tapestry, theymeleaf
-
 
 spring-jdbc,hibernate,jpa,data
 
@@ -20,18 +21,14 @@ snowflake雪花算法
 
 vdi
 
-
-
-
 webstorm
 http://www.jetbrains.com/webstorm/
 https://blog.csdn.net/vchen_hao/article/details/77248053
 https://www.newasp.net/soft/182554.html
 https://jingyan.baidu.com/article/7f41ecec323801593d095c28.html
 
-
-
 xul,xbl
 
 
-
+阿里巴巴代码工具
+https://github.com/alibaba/p3c
