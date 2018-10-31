@@ -1,3 +1,4 @@
+
 1. 添加依赖lib
 加入log4j-1.2.8.jar(可以选择log4j的更高版本)到lib下。
 如果使用maven项目，也可以选择在pom.xml中新增依赖：
