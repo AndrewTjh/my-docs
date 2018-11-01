@@ -1,0 +1,17 @@
+JpaRepository, JpaSpecificationExecutor
+
+
+Example
+	(of)
+ExampleMatcher
+(
+	matching
+	withMatcher
+	withIgnorePaths
+)
+ExampleMatcher.GenericPropertyMatchers
+(
+	startsWith
+	contains
+	endsWith
+)

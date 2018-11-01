@@ -1,0 +1,57 @@
+搜索用关键字：
+EntityManager, Spring Data JPA（动态）条件（sql拼接）查询、用法
+
+搜索相关类：
+PersistenceContext, EntityManager, CriteriaQuery, CriteriaBuilder
+
+搜索相关方法：
+createQuery, createNativeQuery
+
+
+
+分析细节：
+@PersistenceContext
+
+EntityManager
+	(
+		persist,merge,remove,find,refresh,createQuery,getXxx,detach
+	)
+	[
+		Class,Map,Object,T,
+		Query,TypedQuery,CriteriaQuery,CriteriaUpdate,CriteriaDelete
+	]
+
+
+CriteriaBuilder
+	(
+		
+	)
+	[
+		CriteriaQuery, CriteriaUpdate, CriteriaDelete, CompoundSelection, Order, 
+		Expression, Coalesce, Predicate
+	]
+
+Specification, Predicate, Root, 
+
+Query, TypedQuery
+
+TupleElement
+	Selection
+		Expression
+			Path
+				From
+					Root
+
+Join, CollectionJoin, SetJoin, ListJoin, MapJoin
+
+Tuple, TupleElement
+
+CommonAbstractCriteria
+	[]
+	()
+	AbstractQuery
+		[]
+		(from,where,groupBy,having)
+		CriteriaQuery
+		[Selection, Expression, Order]
+		(select,multiselect,where,groupby,having,orderby,distinct)
