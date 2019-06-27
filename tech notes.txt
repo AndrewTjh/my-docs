@@ -1,3 +1,7 @@
+java json
+java xml
+
+
 linux:
 vi,less,more,cat,tail,head
 iptables,service,netstat,端口开放,
@@ -29,6 +33,28 @@ https://jingyan.baidu.com/article/7f41ecec323801593d095c28.html
 
 xul,xbl
 
-
 阿里巴巴代码工具
 https://github.com/alibaba/p3c
+
+
+记号体系：
+1. 继承关系
+Ancestor
+	Parent
+		Child
+
+2. 聚合关系（成员类）
+{}: {aggregated member class}
+
+3. 作为方法输入（参数）输出（返回值）
+[]: [input/output class, method parameters, return types]
+
+4. 方法成员
+(): (member method)
+
+
+I: interface
+C: class
+A: abstract class
+@I: annotation
+E: enum

@@ -1,7 +1,0 @@
-http请求地址和资源文件映射如下:
-
-/{application}-{profile}.properties [application-dev.properties]
-/{application}-{profile}.yml [application-dev.yml]
-/{label}/{application}-{profile}.properties [/mater/application-dev.properties]
-/{label}/{application}-{profile}.yml [/mater/application-dev.yml]
-/{application}/{profile}[/{label}] [/application/dev/master]
